@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WasmPrototypeBackend.MVC", "WasmPrototypeBackend.MVC\WasmPrototypeBackend.MVC.fsproj", "{003CA03F-7FC1-4004-BEAF-A2AA1E43B69D}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "WasmPrototypeBackend.MVC", "WasmPrototypeBackend.MVC\WasmPrototypeBackend.MVC.fsproj", "{003CA03F-7FC1-4004-BEAF-A2AA1E43B69D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B123E574-D856-4648-806C-434FCA24FAB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{003CA03F-7FC1-4004-BEAF-A2AA1E43B69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003CA03F-7FC1-4004-BEAF-A2AA1E43B69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003CA03F-7FC1-4004-BEAF-A2AA1E43B69D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B123E574-D856-4648-806C-434FCA24FAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B123E574-D856-4648-806C-434FCA24FAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B123E574-D856-4648-806C-434FCA24FAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B123E574-D856-4648-806C-434FCA24FAB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
