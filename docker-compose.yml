@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  web-backend:
+    image: web-backend
+    build:
+      context: .
+      dockerfile: WasmPrototypeBackend.MVC/Dockerfile
+    environment:
+      - SQL_PASSWORD=${SQL_PASSWORD}
+      - SQL_PORT=${SQL_PORT}
+  mssql-data:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SQL_PASSWORD}
+    ports:
+      - "${SQL_PORT}:1433"
+    volumes:
+      - logvolume01:/var/log
+
+volumes:
+  logvolume01: {}
